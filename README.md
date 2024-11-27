@@ -24,17 +24,15 @@ A classificação de imagens médicas desempenha um papel crucial no diagnóstic
 
 Os dados foram obtidos de uma base pública, já processados para atender o tamanho de ? x ? e divididos em 4 pastas que representam 4 classes.
 
-### Como baixar os dados para reproduzir os experimentos
-
-Baixar em https://data.mendeley.com/datasets/ch87yswbz4/1
-
 ## Modelos
 
 Foram utilizados os modelos Redes Neurais Convolucionais (CNN), ?, ? e ?. Eles foram comparados em termos de precisão, sensibilidade e especificidade, também foi estabelecida e uma métrica de emissão de carbono equivalente baseado no tempo de treino e tempo de inferência médio.
 
 ### Redes Neurais Convolucionais (CNN)
 
-abc
+Redes neurais convolucionais (CNN, do inglês Convolutional Neural Network) são um tipo de rede neural do tipo feed-foward regularizada que consegue aprender features via filtros específicos (convoluções). É considerado o tipo de rede mais relevante para deep learning em visão computacional, em especial em imagens médicas.
+
+CNNs usam relativamente menos pré processamento que outros métodos de classificação, pois são capazes de aprender a otimizar seus filtros de maneira automatizada, o que dispensa a criação e testes de filtros diretamente. Esta capacidade a destaca em tarefas como a classificação de imagens médicas no diagnóstico de doenças, pois aprendem a identificar anomalias e padrões sutis nos dados estudados.
 
 ### Modelo A
 
@@ -90,6 +88,9 @@ Crie e ative um ambiente usando pip ou pyenv antes e instale os seguintes pacote
 pip install numpy matplotlib scikit-learn ipykernel pandas
 ```
 
+## Anexo: Como baixar os dados para reproduzir os experimentos
+
+Baixar em https://data.mendeley.com/datasets/ch87yswbz4/1 ou utilizar o notebook de preparação de dados
 
 ## Referências
 
