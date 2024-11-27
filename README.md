@@ -1,6 +1,6 @@
 # HealthImagingTrials
 
-**Comparação de algoritmos para classificação de imagens médicas**
+**Comparação de Algoritmos de Aprendizado de Máquina para Classificação de Estágios da Doença de Alzheimer em Imagens de Ressonância Magnética**
 
 ![UFABC Logo](assets/logotipo-ufabc-extenso.png)
 
@@ -12,13 +12,13 @@ lenin.cristi@aluno.ufabc.edu.br, ?, ?, ?
 
 ## Resumo
 
-**Resumo. Abc**
+**Resumo. Comparação de Algoritmos de Aprendizado de Máquina para Classificação de Estágios da Doença de Alzheimer em Imagens de Ressonância Magnética**
 
-**Abstract. Abc**
+**Abstract. Comparison of Machine Learning Algorithms for Classifying Stages of Alzheimer's Disease in Magnetic Resonance Imaging**
 
 ## Objetivos
 
-A classificação de imagens médicas desempenha um papel crucial no diagnóstico precoce e monitoramento da doença de Alzheimer, permitindo intervenções mais eficazes e melhorando os desfechos clínicos. Este projeto investiga a aplicação de diferentes classificadores de aprendizado de máquina para analisar imagens de ressonância magnética (RM) de pacientes em diferentes estágios da doença.
+A classificação de imagens médicas desempenha um papel crucial no diagnóstico precoce e monitoramento da doença de Alzheimer, permitindo intervenções mais eficazes e melhorando os desfechos clínicos. Este projeto investiga a aplicação de diferentes classificadores de aprendizado de máquina para analisar imagens de ressonância magnética (RM, MRI) de pacientes em diferentes estágios da doença.
 
 ## Dados
 
