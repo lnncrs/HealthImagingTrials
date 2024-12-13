@@ -8,7 +8,7 @@ Universidade Federal do ABC - Bacharelado em Ciência e Tecnologia Sistemas Inte
 
 Lenin, Milena, Diego, Leticia
 
-lenin.cristi@aluno.ufabc.edu.br, ?, ?, ?
+lenin.cristi@aluno.ufabc.edu.br, ?, diego.guerra@aluno.ufabc.edu.br, ?
 
 ## Resumo
 
@@ -46,7 +46,7 @@ A preparação dos dados está no notebook [PrepareData](PrepareData.ipynb).
 
 ## Modelos
 
-Foram utilizados os modelos Redes Neurais Convolucionais (CNN), ?, ? e ?. Eles foram comparados em termos de precisão, sensibilidade e especificidade, também foi estabelecida e uma métrica de emissão de carbono equivalente baseado no tempo de treino e tempo de inferência médio.
+Foram utilizados os modelos Redes Neurais Convolucionais (CNN), Random Forest, ? e ?. Eles foram comparados em termos de precisão, sensibilidade e especificidade, também foi estabelecida e uma métrica de emissão de carbono equivalente baseado no tempo de treino e tempo de inferência médio.
 
 ### Redes Neurais Convolucionais (CNN / ResNet)
 
