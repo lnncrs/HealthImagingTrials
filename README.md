@@ -6,9 +6,9 @@
 
 Universidade Federal do ABC - Bacharelado em Ciência e Tecnologia Sistemas Inteligentes 2024/Q3
 
-Lenin, Milena, Diego, Leticia
+Lenin Cristi, Milena R. de Camargo, Diego Guerra, Letícia Martins
 
-lenin.cristi@aluno.ufabc.edu.br, ?, diego.guerra@aluno.ufabc.edu.br, ?
+lenin.cristi@aluno.ufabc.edu.br, milena.camargo@aluno.ufabc.edu.br, diego.guerra@aluno.ufabc.edu.br, martins.leticia@aluno.ufabc.edu.br
 
 ## Resumo
 
