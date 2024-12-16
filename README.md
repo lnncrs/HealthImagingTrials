@@ -40,7 +40,9 @@ Foram utilizados os dados originais sem aumento de dados, que já estavam ajusta
 
 A preparação dos dados está no notebook [PrepareData](PrepareData.ipynb). Este notebook recupera os dados do Kaggle, e os descompacta na pasta **./data** tornando-os prontos para uso nos classificadores.
 
-Tendo em vista o desbalanceamento dos dados nas 4 classes, os diferentes classificadores recuperam até 100 itens em cada pasta com seed fixo para garantir a mesma amostra.
+Tendo em vista o desbalanceamento dos dados nas 4 classes, os diferentes classificadores recuperam entre 64 e 400 itens em cada pasta com seed fixo para garantir a mesma amostra.
+
+As imagens estão no formato 176 x 208.
 
 ## Considerações sobre uso de IA's na área de saúde
 
@@ -74,33 +76,29 @@ Random Forest é um algoritmo de aprendizado de máquina baseado em múltiplas �
 
 Notebook: [RandomForest](notebooks/RandomForest.ipynb)
 
-### Convolutional Neural Network (Redes Neurais Convolucionais)
+### HistGradientBoostingClassifier
 
-Redes neurais convolucionais (CNN, do inglês Convolutional Neural Network) são um tipo de rede neural do tipo feed-foward regularizada que consegue aprender features via filtros específicos (convoluções). É considerado o tipo de rede mais relevante para deep learning em visão computacional, em especial em imagens médicas.
+HistGradientBoostingClassifier é um classificador da biblioteca skLearn, sendo uma das suas implementações de árvores com gradiente reforçado. Esse classificador usa uma estrutura de dados chamada histograma, onde as amostras são ordenadas implicitamente. A construção de um histograma tem uma complexidade O(n), então o procedimento de divisão de nós tem uma complexidade O(n_features x n).
+
+O modelo foi escolhido por suportar classificação de múltiplas classes e por ter pontuação de teste e velocidade de treinamento, de forma geral, melhores quando comparados a outros classificadores como o RandomForest.
+
+Notebook: [HistGBoosting](notebooks/HistGBoosting.ipynb)
+
+### Convolutional Neural Network - ResNet (Redes Neurais Convolucionais - ResNet)
+
+Redes neurais convolucionais (CNN, do inglês Convolutional Neural Network) são um tipo de rede neural do tipo feed-foward regularizada que consegue aprender features via filtros específicos (convoluções).
 
 CNNs usam relativamente menos pré processamento que outros métodos de classificação, pois são capazes de aprender a otimizar seus filtros de maneira automatizada, o que dispensa a criação e testes de filtros diretamente. Esta capacidade a destaca em tarefas como a classificação de imagens médicas no diagnóstico de doenças, pois aprendem a identificar anomalias e padrões sutis nos dados estudados.
 
-ResNet (Residual Network) é uma arquitetura de rede neural profunda desenvolvida para resolver o problema da degradação em redes muito profundas, onde o aumento do número de camadas pode piorar o desempenho. Ela introduz blocos residuais, que permitem que o sinal de entrada seja "pulada" através de uma conexão direta para a camada seguinte, facilitando o treinamento de redes com muitas camadas.
+ResNet (Residual Network) é uma arquitetura de rede neural profunda desenvolvida para resolver o problema da degradação em redes muito profundas, onde o aumento do número de camadas pode piorar o desempenho. Ela introduz blocos residuais, que permitem que o sinal de entrada seja "pulado" através de uma conexão direta para a camada seguinte, facilitando o treinamento de redes com muitas camadas.
 
 ResNet-50: Um modelo com 50 camadas que utiliza um bloco residual chamado bottleneck, sendo uma das versões mais populares de ResNet devido à sua boa performance em várias tarefas e seu equilíbrio entre profundidade e velocidade de treinamento.
 
-DenseNet (Densely Connected Convolutional Network) é uma arquitetura de rede neural profunda que melhora a eficiência do aprendizado ao conectar cada camada a todas as camadas anteriores. Ou seja, em vez de cada camada receber apenas a saída da camada anterior (como em redes tradicionais), cada camada em uma DenseNet recebe a entrada de todas as camadas anteriores, formando uma conexão densa.
-
-DenseNet-169: Com 169 camadas, oferece maior profundidade e pode capturar características mais complexas, sendo uma boa escolha para tarefas mais desafiadoras.
-
-Notebook: [CNN](notebooks/CNN.ipynb)
+Notebook: [CNN-ResNet](notebooks/CNN-ResNet.ipynb)
 
 ## Como foram comparados
 
-Os experimentos compararam os modelos em várias métricas de precisão e também foi estabelecida e uma métrica de emissão de carbono equivalente baseado no tempo de treino e tempo de inferência médio.
-
-## Resultados
-
-abc
-
-## Conclusões
-
-abc
+Os experimentos compararam os modelos em várias métricas de precisão.
 
 ## Anexo: Como gerar o ambiente para reproduzir os experimentos
 
@@ -144,6 +142,7 @@ Instale as bibliotecas Hugginface usando a referência oficial aqui https://hugg
 pip install transformers datasets evaluate
 pip install accelerate
 pip install huggingface_hub
+pip install tensorboard
 ```
 
 ## Referências
